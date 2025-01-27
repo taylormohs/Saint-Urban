@@ -6,7 +6,7 @@
 
 * {
   scroll-behavior: smooth;
-  font-family: courier new;
+  font-family: "Courier New", Courier, monospace;
   cursor: default;
   background-color: var(--beige);
 }
@@ -17,6 +17,13 @@ header {
 
 img {
   height: 6em;
+}
+
+a:hover,
+button:hover,
+#links a:hover {
+  cursor: pointer;
+  color: var(--forest);
 }
 
 .img-container {
@@ -72,7 +79,7 @@ h2 {
   position: fixed;
   width: 100%;
   padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding-bottom: -0.2em;
 }
 
 #links a {
@@ -81,11 +88,11 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--beige);
-  color: black;
   font-size: 0.9em;
   width: fit-content;
   text-decoration: none;
   font-weight: lighter;
+  color: black;
 }
 
 h4 {
@@ -112,79 +119,25 @@ button {
 
 .description {
   font-size: 1.1em;
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-#picture {
-  width: 15em;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-right: 3em;
-  margin-left: 3em;
-  left: 0;
-  display: block;
-  padding-top: 7em;
-  padding-bottom: 1em;
-}
-
-@media (max-width: 1200px) {
-  #picture {
-    width: 12em;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-top: 5em;
+@media (max-width: 1600px) {
+  img {
+    height: 4.2em;
   }
 }
 
-@media (max-width: 800px) {
-  #picture {
-    width: 75%;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 1.8em;
-    margin-left: 1.8em;
+@media (max-width: 700px) {
+  img {
+    height: 6em;
     
   }
-
-  #profile-picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
 }
 
 @media (max-width: 600px) {
-  #profile-picture {
-    width: 75%;
-    height: auto;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
- */
+  img {
+    height: 4em;
+  } 
+}
