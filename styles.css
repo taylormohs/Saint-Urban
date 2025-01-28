@@ -104,6 +104,30 @@ h4 {
 #h4-description {
   text-decoration: none;
   font-size: 1.2em;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  
+}
+
+#h4-button-description {
+  align-items: center;
+  text-align: center;
+}
+
+#no-button:hover {
+  color: black;
+  cursor: default;
+}
+
+#h4-button {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  border: var(--forest) solid 1.5px;
+  text-decoration: underline;
+  margin: auto auto;
 }
 
 h5 {
