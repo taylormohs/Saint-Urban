@@ -146,6 +146,24 @@ button {
   font-weight: bold;  
 }
 
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: justify;
+  gap: 1em;
+}
+
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: justify;
+}
+
+#responsibility-container {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
 
 @media (max-width: 1600px) {
   img {
