@@ -21,9 +21,29 @@ checkBtns.forEach((checkBtn, index) => {
         
         if (userInput[index].value === answers[index].textContent) {
             answers[index].style.display = 'block';
-            answers[index].textContent = `Correct!`;
+            answers[index].textContent = `Correct! ${answers[index].style.display.block}`;
         } else {
             answers[index].style.display = isAnswerVisible[index] ? 'block' : 'none';
         }
     });
+});
+
+userInput.forEach((input, index) => {
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            isAnswerVisible[index] = !isAnswerVisible[index];
+            if (input.value === answers[index].textContent) {
+                answers[index].style.display = 'block';
+                answers[index].textContent = `Correct!`;
+            } else {
+                answers[index].style.display = isAnswerVisible[index] ? 'block' : 'none';
+            }
+        }
+    });
+});
+
+
+
+userInput.forEach(input => {
+    input.setAttribute('spellcheck', 'false');
 });
