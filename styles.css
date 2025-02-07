@@ -185,6 +185,10 @@ button {
   cursor: text;
 }
 
+.left {
+  text-align: left;
+}
+
 @media (max-width: 1600px) {
   img {
     height: 4.2em;
