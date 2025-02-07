@@ -95,6 +95,11 @@ h2 {
   color: black;
 }
 
+.no-link {
+  color: black;
+  background-color: var(--beige);
+}
+
 h4 {
   text-decoration: underline;
   text-align: center;
@@ -188,6 +193,11 @@ button {
 .left {
   text-align: left;
 }
+
+li {
+  justify-content: top;
+}
+
 
 @media (max-width: 1600px) {
   img {
