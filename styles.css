@@ -100,6 +100,10 @@ h2 {
   background-color: var(--beige);
 }
 
+.no-link:visited {
+  color: black;
+}
+
 h4 {
   text-decoration: underline;
   text-align: center;
