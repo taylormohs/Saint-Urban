@@ -96,8 +96,8 @@ h2 {
 }
 
 .no-link {
-  color: black;
-  background-color: var(--beige);
+  color: black !important;
+  background-color: var(--beige) !important;
 }
 
 .no-link:visited {
